@@ -1,0 +1,225 @@
+@charset "UTF-8";
+@font-face {
+  font-family: lexendDeca;
+  src: url(LexendDeca-VariableFont_wght.ttf);
+  font-weight: 400;
+}
+@font-face {
+	font-family: bigShoulders;
+	src: url(BigShouldersDisplay-Regular.ttf);
+}
+:root {
+	--brightOrange: hsl(31, 77%, 52%);
+	--darkCyan: hsl(184, 100%, 22%);
+	--veryDarkCyan: hsl(179, 100%, 13%);
+	--transparentWhite: hsla(0, 0%, 100%, 0.75); /*  paragraphs */
+	--veryLightGray: hsl(0, 0%, 95%); /*  background, headings, buttons */
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	wight: 100%;
+	min-height: 100vh;
+	display: flex;
+	flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: space-around;
+}
+img {
+	display: block;
+}
+.container {
+	width: 60%;
+	min-height: 80vh;
+	display: flex;
+	flex-wrap: wrap;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.box1 {
+	width: 33.333333%;
+	background-color: var(--brightOrange);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	padding: 5%;
+	color: var(--veryLightGray);
+}
+.box2 {
+	width: 33.333333%;
+	background-color: var(--darkCyan);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	padding: 5%;
+	color: var(--veryLightGray);
+}
+.box3 {
+	width: 33.333333%;
+	background-color: var(--veryDarkCyan);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	padding: 5%;
+	color: var(--veryLightGray);
+}
+
+.box1 img {
+	width: 30%;
+}
+.box1 h1 {
+	width: 100%;
+	text-transform: uppercase;
+	font-family: bigShoulders;
+}
+.box1 p {
+	width: 100%;
+	font-family: lexendDeca;
+}
+.box1 a {
+	width: 75%;
+	height: 10%;
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: lexendDeca;
+	color: var(--brightOrange);
+	background-color: var(--veryLightGray);
+	border: 1px solid var(--veryLightGray);
+	border-radius: 30px;
+}
+
+.box1 a:hover {
+	color: var(--veryLightGray);
+	background-color: var(--brightOrange);
+	border: 2px solid white;
+}
+
+.box2 img {
+	width: 30%;
+}
+.box2 h1 {
+	width: 100%;
+	text-transform: uppercase;
+	font-family: bigShoulders;
+}
+.box2 p {
+	width: 100%;
+	font-family: lexendDeca;
+}
+.box2 a {
+	width: 75%;
+	height: 10%;
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: lexendDeca;
+	color: var(--darkCyan);
+	background-color: var(--veryLightGray);
+	border: 1px solid var(--veryLightGray);
+	border-radius: 30px;
+}
+
+.box2 a:hover {
+	color: var(--veryLightGray);
+	background-color: var(--darkCyan);
+	border: 2px solid white;
+}
+
+.box3 img {
+	width: 30%;
+}
+.box3 h1 {
+	width: 100%;
+	text-transform: uppercase;
+	font-family: bigShoulders;
+}
+.box3 p {
+	width: 100%;
+	font-family: lexendDeca;
+}
+.box3 a {
+	width: 75%;
+	height: 10%;
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: lexendDeca;
+	color: var(--veryDarkCyan);
+	background-color: var(--veryLightGray);
+	border: 1px solid var(--veryLightGray);
+	border-radius: 30px;
+}
+
+.box3 a:hover {
+	color: var(--veryLightGray);
+	background-color: var(--veryDarkCyan);
+	border: 2px solid white;
+}
+
+.attribution {
+	width: 100%;
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	background-color: hsl(228, 45%, 44%);
+	border: .5px solid hsl(228, 45%, 44%, 0%);
+	color: white;
+	padding: .333333%;
+}
+.attribution a:hover {
+	background-color: white;
+	border: .5px solid hsl(228, 45%, 44%);
+	box-sizing: border-box;
+	color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 768px) {
+	* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	wight: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+img {
+	display: block;
+}
+.container {
+	margin: 5% 0;
+	width: 60%;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	border-radius: 10px;
+	}
+	.box3 {
+		width: 100%;
+		height: 80vh;
+	}
+	.box1 {
+		width: 100%;
+		height: 80vh;
+	}
+	.box2 {
+		width: 100%;
+		height: 80vh;
+	}
+	.attribution {
+		margin: 5% 0;
+	}
+}
